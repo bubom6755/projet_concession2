@@ -18,4 +18,4 @@ class Vehicule(models.Model):
     concession = models.ForeignKey(Concession, related_name="vehicules", on_delete=models.CASCADE)
 
     def __str__(self):
-        return f"{self.marque} {self.modele} - {self.immatriculation}"
+        return f"{self.marque} {self.modele} - {self.immatriculation}
